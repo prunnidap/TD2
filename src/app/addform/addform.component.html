@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="mb-3">
+    <label for="inputPrenom" class="form-label">Prénom</label>
+    <input [(ngModel)]="enseignant.prenom" type="text" class="form-control" id="inputPrenom">
+  </div>
+  <div class="mb-3">
+    <label for="inputNom" class="form-label">Nom</label>
+    <input [(ngModel)]="enseignant.nom" type="text" class="form-control" id="inputNom">
+  </div>
+  <div class="mb-3">
+    <label for="inputMail" class="form-label">Email</label>
+    <input [(ngModel)]="enseignant.email" type="text" class="form-control" id="inputMail">
+  </div>
+  <div class="mb-3">
+    <label for="inputTelephone" class="form-label">Téléphone</label>
+    <input [(ngModel)]="enseignant.telephone" type="text" class="form-control" id="inputTelephone">
+  </div>
+  <div class="mb-3">
+    <label for="inputBureau" class="form-label">Bureau</label>
+    <input [(ngModel)]="enseignant.bureau" type="text" class="form-control" id="inputBureau">
+  </div>
+  <div class="mb-3">
+    <label for="inputLaboratoire" class="form-label">Laboratoire</label>
+    <input [(ngModel)]="enseignant.laboratoire" type="text" class="form-control" id="inputLaboratoire">
+  </div>
+  <div class="mb-3">
+    <label for="inputRGate" class="form-label">Profil Research Gate</label>
+    <input [(ngModel)]="enseignant.lienResearchGate" type="text" class="form-control" id="inputRGate">
+  </div>
+  <div class="mb-3">
+    <label for="inputPhoto" class="form-label">Photo</label>
+    <input [(ngModel)]="enseignant.photo" class="form-control" type="text" id="inputPhoto">
+  </div>
+  <div class="mb-3">
+    <button type="submit" class="btn btn-primary mb-3" (click)="add()">Ajouter</button>
+  </div>
+</div>

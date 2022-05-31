@@ -1,0 +1,16 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{etudiant.nom}} {{etudiant.prenom}}</h5>
+    <img src="{{etudiant.photo}}" class="img-fluid" alt="Responsive image">
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Email : {{etudiant.email}}</li>
+    <li class="list-group-item">Telephone : {{etudiant.telephone}}</li>
+  </ul>
+  <div class="card-body">
+    <a href="{{etudiant.lienLinkedIn}}" class="card-link">Lien LinkedIn</a>
+    <a href="{{etudiant.lienAlumni}}" class="card-link">Lien Alumni</a>
+    <a href="{{etudiant.prenom | lienGit : etudiant.nom}}" class="card-link">Lien Git :</a>
+    <p class="card-link">{{etudiant.prenom | lienGit : etudiant.nom}}</p>
+  </div>
+</div>

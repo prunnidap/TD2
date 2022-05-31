@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="mb-3">
+    <label for="inputPrenom" class="form-label">Prénom</label>
+    <input [(ngModel)]="personnel.prenom" type="text" class="form-control" id="inputPrenom" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="inputNom" class="form-label">Nom</label>
+    <input [(ngModel)]="personnel.nom" type="text" class="form-control" id="inputNom" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="inputMail" class="form-label">Email</label>
+    <input [(ngModel)]="personnel.email" type="text" class="form-control" id="inputMail" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="inputTelephone" class="form-label">Téléphone</label>
+    <input [(ngModel)]="personnel.telephone" type="text" class="form-control" id="inputTelephone" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="inputBureau" class="form-label">Bureau</label>
+    <input [(ngModel)]="personnel.bureau" type="text" class="form-control" id="inputBureau" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="inputService" class="form-label">Service</label>
+    <input [(ngModel)]="personnel.service" type="text" class="form-control" id="inputService" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="inputTwitter" class="form-label">Twitter</label>
+    <input [(ngModel)]="personnel.twitter" type="text" class="form-control" id="inputTwitter" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="inputPhoto" class="form-label">Photo</label>
+    <input [(ngModel)]="personnel.photo" class="form-control" type="text" id="inputPhoto">
+  </div>
+  <div class="mb-3">
+    <button type="submit" class="btn btn-primary mb-3" (click)="add()">Ajouter</button>
+  </div>
+</div>

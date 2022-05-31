@@ -1,0 +1,31 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{enseignant.nom}} {{enseignant.prenom}}</h5>
+    <img src="{{enseignant.photo}}" class="img-fluid" alt="Responsive image">
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Email : {{enseignant.email}}</li>
+    <li class="list-group-item">Telephone : {{enseignant.telephone}}</li>
+    <li class="list-group-item">Bureau : {{enseignant.bureau}}</li>
+    <li class="list-group-item"
+        [ngStyle]="{'font-family':
+        enseignant.laboratoire == 'ICB' ? 'Times New Roman':
+        enseignant.laboratoire == 'CIAD' ? 'Helvetica':
+        enseignant.laboratoire == 'FemtoST' ? 'sans-serif':
+        'serif',
+        'color':
+        enseignant.laboratoire == 'ICB' ? 'red':
+        enseignant.laboratoire == 'CIAD' ? 'blue':
+        enseignant.laboratoire == 'FemtoST' ? 'yellow':
+        'green'}">Laboratoire : {{enseignant.laboratoire}}</li>
+    <li class="list-group-item">Likes : {{enseignant.likes}}</li>
+    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary btn-sm" (click)="enseignant.likes = enseignant.likes + 1">Like</button>
+      <button type="button" class="btn btn-secondary btn-sm" (click)="decrement()">Dislike</button>
+    </div>
+
+  </ul>
+  <div class="card-body">
+    <a href="{{enseignant.lienResearchGate}}" class="card-link">Lien Research Gate</a>
+  </div>
+</div>

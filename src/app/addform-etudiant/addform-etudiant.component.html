@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="mb-3">
+    <label for="inputPrenom" class="form-label">Prénom</label>
+    <input [(ngModel)]="etudiant.prenom" type="text" class="form-control" id="inputPrenom" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="inputNom" class="form-label">Nom</label>
+    <input [(ngModel)]="etudiant.nom" type="text" type="text" class="form-control" id="inputNom" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="inputMail" class="form-label">Email</label>
+    <input [(ngModel)]="etudiant.email" type="text" type="text" class="form-control" id="inputMail" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="inputTelephone" class="form-label">Téléphone</label>
+    <input [(ngModel)]="etudiant.telephone" type="text" type="text" class="form-control" id="inputTelephone" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="inputLinkedIn" class="form-label">Lien LinkedIn</label>
+    <input [(ngModel)]="etudiant.lienLinkedIn" type="text" type="text" class="form-control" id="inputLinkedIn" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="inputAlumni" class="form-label">Lien Alumni</label>
+    <input [(ngModel)]="etudiant.lienAlumni" type="text" type="text" class="form-control" id="inputAlumni" placeholder="">
+  </div>
+  <div class="mb-3">
+    <label for="inputPhoto" class="form-label">Photo</label>
+    <input [(ngModel)]="etudiant.photo" type="text" class="form-control" type="text" id="inputPhoto">
+  </div>
+  <div class="mb-3">
+    <button type="submit" class="btn btn-primary mb-3" (click)="add()">Ajouter</button>
+  </div>
+</div>

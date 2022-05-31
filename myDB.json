@@ -1,0 +1,16 @@
+{
+  "enseignants" : [
+    {
+      "id" : 1,
+      "nom" : "Sandrine",
+      "prenom" : "Rombière",
+      "email" : "sandrinerombiere@gmail.com",
+      "telephone" : "0897564345",
+      "photo" : "./assets/sandrine.jpg",
+      "bureau" : "B410",
+      "laboratoire" : "CIAD",
+      "lienResearchGate" : "https://coinmarketcap.com/currencies/bitcoin/",
+      "likes" : 0
+    }
+  ]
+}
